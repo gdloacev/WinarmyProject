@@ -9,6 +9,8 @@ TagManager:
   - Obstacle_3
   - Obstacle_4
   - Dino
+  - Back_Hazard
+  - Dino_Chicken
   layers:
   - Default
   - TransparentFX
