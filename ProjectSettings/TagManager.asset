@@ -8,6 +8,7 @@ TagManager:
   - Obstacle_2
   - Obstacle_3
   - Obstacle_4
+  - Dino
   layers:
   - Default
   - TransparentFX

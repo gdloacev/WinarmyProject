@@ -24,7 +24,7 @@ public class MeshDestroy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Dino"))
+        if (other.gameObject.CompareTag("Player"))
         {
             DestroyMesh();
             thiscollider.enabled = false;
