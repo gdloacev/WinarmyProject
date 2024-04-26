@@ -9032,19 +9032,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2983679882592008062, guid: e9459f9f4ba14514b86833970cd1908a,
         type: 3}
-      propertyPath: speed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2983679882592008062, guid: e9459f9f4ba14514b86833970cd1908a,
-        type: 3}
       propertyPath: directionPoint
       value: 
       objectReference: {fileID: 960758249}
-    - target: {fileID: 2983679882592008062, guid: e9459f9f4ba14514b86833970cd1908a,
-        type: 3}
-      propertyPath: destroyThreshold
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5964400124194184618, guid: e9459f9f4ba14514b86833970cd1908a,
         type: 3}
       propertyPath: m_Name

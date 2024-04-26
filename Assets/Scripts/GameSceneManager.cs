@@ -13,7 +13,6 @@ public class GameSceneManager : Singleton<GameSceneManager>
         switch (gameState)
         {
             case GameState.Intro:
-                // Handle Intro state (e.g., character dancing)
                 if (Input.GetKeyDown(KeyCode.Space)) // Assuming space starts the game
                 {
                     StartTransition();
