@@ -13,6 +13,7 @@ public class Win : MonoBehaviour
         // On Win
         if (other.gameObject.CompareTag("Mouse"))
         {
+            CameraManager.Instance.WinCamera();
             Debug.Log("You've Won!");
             lavaHazzard.SetActive(false);
 
