@@ -3,5 +3,6 @@
         Intro,
         Transition, 
         Playing,
-        Paused
+        Paused,
+        GameOver
 }

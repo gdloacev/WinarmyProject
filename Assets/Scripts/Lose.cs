@@ -13,6 +13,7 @@ public class Lose : MonoBehaviour
         if (other.gameObject.CompareTag("Mouse"))
         {
             Debug.Log("You've Died!");
+            GameSceneManager.Instance.GameState = GameState.GameOver;
 
             /*activate death animation*/
 
