@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        //if (GameSceneManager.Instance.GameState != GameState.Playing) return;
+        if (GameSceneManager.Instance.GameState != GameState.Playing) return;
 
         if (_allowMovement)
         {

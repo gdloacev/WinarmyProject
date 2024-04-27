@@ -8,20 +8,25 @@ using UnityEngine.UI;
 
 public class UIPause : MonoBehaviour
 {
-    private bool isPaused = false;
-    [SerializeField] GameObject menuPause;
-    // public TMP_Button buttonToSelect;
+
+    [SerializeField] GameObject menuPause = null;
+    [SerializeField] AudioClip  _audioPause = null;
+    [SerializeField] AudioClip _audioNotPause = null;
+
     public Button buttonToSelect;
 
-    // Update is called once per frame
+    private AudioSource _audioSource = null;
+    private bool isPaused = false;
+
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (GameSceneManager.Instance.GameState != GameState.Playing) return;
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            EventPause();
-        }
+        if (Input.GetKeyDown(KeyCode.Escape)) EventPause();
     }
 
     public void EventPause()
@@ -35,11 +40,13 @@ public class UIPause : MonoBehaviour
         {
             Time.timeScale = 0f;
             EventSystem.current.SetSelectedGameObject(buttonToSelect.gameObject);
+            _audioSource.PlayOneShot(_audioPause);
         }
         else
         {
             Time.timeScale = 1f;
             EventSystem.current.SetSelectedGameObject(null);
+            _audioSource.PlayOneShot(_audioNotPause);
         }
     }
 
