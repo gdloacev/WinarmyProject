@@ -21,13 +21,13 @@ public class CameraManager : Singleton<CameraManager>
 
     private IEnumerator TransitionDelayed()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
         mainCamera.Priority = 10;
         introCamera.Priority = 0;
     }
 
     public bool IsTransitionDone()
     {
-        return mainCamera.isActiveAndEnabled && !brain.IsBlending;
+        return brain.ActiveVirtualCamera == mainCamera && !brain.IsBlending;
     }
 }

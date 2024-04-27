@@ -7,7 +7,7 @@ public class UIManager : Singleton<UIManager>
         
     void Update()
     {
-        switch (GameSceneManager.Instance.gameState)
+        switch (GameSceneManager.Instance.GameState)
         {
             case GameState.Intro:
                 gameplayUI.SetActive(false);

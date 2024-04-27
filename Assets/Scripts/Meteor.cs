@@ -17,7 +17,7 @@ public class Meteor : MonoBehaviour
 
     private void Update()
     {
-        if (GameSceneManager.Instance.gameState == GameState.Intro)
+        if (GameSceneManager.Instance.GameState == GameState.Intro)
         {
             return;
         }
