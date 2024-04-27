@@ -5669,7 +5669,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.49692547, g: 0.7735849, b: 0.26637593, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49803922, g: 0.77254903, b: 0.26666668, a: 1}
     m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
     m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8820,7 +8820,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.49803922, g: 0.7764706, b: 0.26666668, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49803922, g: 0.77254903, b: 0.26666668, a: 1}
     m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
     m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -13918,7 +13918,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.49803922, g: 0.7764706, b: 0.26666668, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49803922, g: 0.77254903, b: 0.26666668, a: 1}
     m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
     m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -37058,7 +37058,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.49692547, g: 0.7735849, b: 0.26637593, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.49803922, g: 0.77254903, b: 0.26666668, a: 1}
     m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
     m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -43511,6 +43511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Volume
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038889476126496567, guid: bd5963a7586547e4185ea82a64aefef2,
+        type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3047564140060840082, guid: bd5963a7586547e4185ea82a64aefef2,
         type: 3}
