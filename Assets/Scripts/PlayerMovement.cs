@@ -25,7 +25,10 @@ public class PlayerMovement : MonoBehaviour
             var horizontal = Input.GetAxis("Horizontal");
             var vertical = Input.GetAxis("Vertical");
             Move(horizontal, vertical);
-            if (Input.GetButtonDown("Fire1") && IsGrounded()) transform.position += _jumpSpeed * Time.deltaTime * Vector3.up;
+            if (Input.GetButtonDown("Fire1") && IsGrounded())
+            {
+                animator.SetTrigger("Jump");
+            }
         }
         else
         {
