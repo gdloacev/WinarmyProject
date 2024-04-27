@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public class PlayersAcoplation : MonoBehaviour
@@ -27,7 +28,7 @@ public class PlayersAcoplation : MonoBehaviour
         if (parent != null)
         {
             parent.GetComponent<PlayerMovement>().SetAllowMovement(false);
-            parent.tag = string.Empty;
+            parent.tag = "Untagged";
         }
         source.transform.position = _acoplationPoint.position;
         source.transform.SetParent(_acoplationPoint.parent);

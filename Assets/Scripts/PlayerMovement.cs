@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour
             Move(horizontal, vertical);
             if (Input.GetButtonDown("Fire1") && IsGrounded()) transform.position += _jumpSpeed * Time.deltaTime * Vector3.up;
         }
+        else
+        {
+            animator.SetFloat("Speed", 0f);
+        }
     }
 
     public void Move(float horizontal, float vertical)
