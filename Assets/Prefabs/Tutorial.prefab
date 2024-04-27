@@ -198,8 +198,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Te mueves con WASD o las flechas direccionales, tu objetivo es huir y usar
-    a otros dinosaurios para llegar al final y salvarte.
+  m_text: "\rYou move with WASD or the directional arrows, your objective is flee
+    and use other dinosaurs to reach the end and save yourself."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aab6b7c79239be4ca9b5cbfa110f025, type: 2}
   m_sharedMaterial: {fileID: 7527363908015006468, guid: 0aab6b7c79239be4ca9b5cbfa110f025,
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entendido
+  m_text: Return
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0aab6b7c79239be4ca9b5cbfa110f025, type: 2}
   m_sharedMaterial: {fileID: 7527363908015006468, guid: 0aab6b7c79239be4ca9b5cbfa110f025,
