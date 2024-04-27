@@ -67,7 +67,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
 
     public void StartGame()
     {
-        _soundManager.PlayMusic(0, true);
+        _soundManager.PlayMusic(1, true);
         activateStart = true;
     }
 

@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuStart : MonoBehaviour
 {
+    [SerializeField] SoundManager _soundManager = null;
+
+    private void Start() => _soundManager.PlayMusic(0, true);
+
     public void GoToTutorial()
     {
         GameSceneManager.Instance.StartGame();
