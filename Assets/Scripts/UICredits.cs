@@ -78,7 +78,7 @@ public class UICredits : MonoBehaviour
             creditsPanel.transform.Translate(Vector3.up * speed * Time.deltaTime);
             CheckIfCreditsFinished();
         }
-        if(showCredit && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))) {
+        if(showCredit && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.KeypadEnter))) {
             showCredit = false;
             panelElement.SetActive(false);
             _soundManager.PlayMusic(0, true);
