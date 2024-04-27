@@ -17,11 +17,16 @@ public class PlayersAcoplation : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision != null && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed()) { 
-            transform.position = _acoplationPoint.position;
-            transform.parent = _acoplationPoint.parent;
-            _playerMovement.SetAllowMovement(false);
-            collision.gameObject.GetComponent<PlayerMovement>().SetAllowMovement(true);
+        if (collision != null && this.CompareTag("Mouse") && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed()) {
+            PlayerAcoplation(collision.gameObject);
         }
+    }
+
+    private void PlayerAcoplation(GameObject target) {
+        transform.position = _acoplationPoint.position;
+        transform.parent = _acoplationPoint.parent;
+        _rb.constraints = RigidbodyConstraints.FreezeAll;
+        _playerMovement.SetAllowMovement(false);
+        target.GetComponent<PlayerMovement>().SetAllowMovement(true);
     }
 }
