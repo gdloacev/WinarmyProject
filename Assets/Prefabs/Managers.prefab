@@ -47,6 +47,7 @@ MonoBehaviour:
   brain: {fileID: 0}
   introCamera: {fileID: 0}
   mainCamera: {fileID: 0}
+  delay: 0
 --- !u!1 &1732665874360647434
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811f0e1c491b02c4eb8c371cf58869e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lavaHazard: {fileID: 0}
+  lavaHazard: {fileID: 3047564140060840082, guid: bd5963a7586547e4185ea82a64aefef2,
+    type: 3}
 --- !u!1 &9082068256888046291
 GameObject:
   m_ObjectHideFlags: 0

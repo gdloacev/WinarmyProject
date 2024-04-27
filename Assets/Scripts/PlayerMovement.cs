@@ -17,10 +17,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (GameSceneManager.Instance.GameState != GameState.Playing)
-        {
-            return;
-        }
+        //if (GameSceneManager.Instance.GameState != GameState.Playing) return;
 
         if (_allowMovement)
         {
@@ -43,12 +40,6 @@ public class PlayerMovement : MonoBehaviour
 
         // Apply movement to the Rigidbody
         _rb.velocity = movement;
-        
-        //
-        // if (horizontal > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.right;
-        // if (horizontal < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.left;
-        // if (vertical > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.forward;
-        // if (vertical < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.back;
     }
 
     private bool IsGrounded()
