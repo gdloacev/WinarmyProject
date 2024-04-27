@@ -16,8 +16,8 @@ public class UICredits : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI creditsText;
     [SerializeField] private RectTransform creditsPanel;
-
     [SerializeField] private GameObject panelElement;
+    [SerializeField] private SoundManager _soundManager = null;
     
 
     private float totalHeight;
@@ -60,6 +60,7 @@ public class UICredits : MonoBehaviour
     }
 
     public void StartCredits() {
+        _soundManager.PlayMusic(4, true);
         panelElement.SetActive(true);
         showCredit = true;
         SetInitialPosition();
@@ -80,6 +81,7 @@ public class UICredits : MonoBehaviour
         if(showCredit && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))) {
             showCredit = false;
             panelElement.SetActive(false);
+            _soundManager.PlayMusic(0, true);
         }
     }
 
@@ -89,6 +91,7 @@ public class UICredits : MonoBehaviour
         {
             showCredit = false;
             panelElement.SetActive(false);
+            _soundManager.PlayMusic(0, true);
         }
     }
 }

@@ -168,6 +168,7 @@ MonoBehaviour:
   creditsText: {fileID: 2365264758247850185}
   creditsPanel: {fileID: 4119930360150647370}
   panelElement: {fileID: 1039268554740038980}
+  _soundManager: {fileID: 0}
   speed: 150
 --- !u!1 &9216597855523948785
 GameObject:
