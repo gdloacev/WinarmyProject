@@ -16,6 +16,8 @@ public class UIPause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameSceneManager.Instance.GameState != GameState.Playing) return;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             EventPause();
@@ -43,6 +45,6 @@ public class UIPause : MonoBehaviour
 
     public void GoToStartingScreen()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("GamePlayScene");
     }
 }

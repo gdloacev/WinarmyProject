@@ -173,6 +173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 0}
-  introUI: {fileID: 0}
+  introUI: {fileID: 479447878315172193, guid: 49468397f5e98bc4d944734b34ddf15a, type: 3}
   winPanel: {fileID: 0}
   losePanel: {fileID: 0}
