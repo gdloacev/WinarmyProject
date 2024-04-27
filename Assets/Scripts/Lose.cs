@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Lose : MonoBehaviour
 {
     [SerializeField] private GameObject canvasLose;
+    [SerializeField] private SoundManager _soundManager = null;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,7 +25,9 @@ public class Lose : MonoBehaviour
 
     IEnumerator LoadCorutine()
     {
+        _soundManager.PlayOneShot(1);
         yield return new WaitForSeconds(0.5f);
+        _soundManager.PlayMusic(3);
         canvasLose.SetActive(true);
     }
 }

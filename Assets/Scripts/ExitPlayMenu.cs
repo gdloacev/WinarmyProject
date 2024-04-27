@@ -17,6 +17,6 @@ public class ExitPlayMenu : MonoBehaviour
 
     public void MenuGame()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("GameplayScene");
     }
 }

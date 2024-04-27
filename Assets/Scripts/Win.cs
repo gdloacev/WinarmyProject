@@ -7,6 +7,7 @@ public class Win : MonoBehaviour
 {
     [SerializeField] private GameObject lavaHazzard;
     [SerializeField] private GameObject canvasWin;
+    [SerializeField] private SoundManager _soundManager = null;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -27,6 +28,7 @@ public class Win : MonoBehaviour
     IEnumerator LoadCorutine()
     {
         yield return new WaitForSeconds(5);
+        _soundManager.PlayMusic(2);
         canvasWin.SetActive(true);
     }
 }
