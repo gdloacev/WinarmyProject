@@ -7,7 +7,7 @@ public class MenuStart : MonoBehaviour
 {
     public void GoToTutorial()
     {
-        StartCoroutine(LoadYourAsyncScene());
+        GameSceneManager.Instance.StartGame();
     }
 
     public void ExitGame()
@@ -17,14 +17,5 @@ public class MenuStart : MonoBehaviour
         #else
             Application.Quit();
         #endif
-    }
-
-     IEnumerator LoadYourAsyncScene()
-    {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Tutorial001");
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
     }
 }
