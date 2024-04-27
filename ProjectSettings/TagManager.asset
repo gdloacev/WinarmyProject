@@ -11,6 +11,7 @@ TagManager:
   - Dino
   - Back_Hazard
   - Dino_Chicken
+  - Mouse
   layers:
   - Default
   - TransparentFX
