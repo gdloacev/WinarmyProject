@@ -126,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811f0e1c491b02c4eb8c371cf58869e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIStart: {fileID: 479447878315172193, guid: 49468397f5e98bc4d944734b34ddf15a, type: 3}
   lavaHazard: {fileID: 3047564140060840082, guid: bd5963a7586547e4185ea82a64aefef2,
     type: 3}
 --- !u!1 &9082068256888046291
@@ -174,6 +173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 0}
-  introUI: {fileID: 0}
+  introUI: {fileID: 479447878315172193, guid: 49468397f5e98bc4d944734b34ddf15a, type: 3}
   winPanel: {fileID: 0}
   losePanel: {fileID: 0}
