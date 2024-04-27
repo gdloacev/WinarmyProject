@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShaderKeywordFilter;
@@ -7,15 +8,18 @@ public class PlayersAcoplation : MonoBehaviour
 {
     private Transform _acoplationPoint = null;
     private PlayerMovement _playerMovement;
+    private Size _size;
 
     private void Awake()
     {
-       _playerMovement = GetComponent<PlayerMovement>();
+        _playerMovement = GetComponent<PlayerMovement>();
+        _size = GetComponent<Size>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision != null && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed() && (this.CompareTag("Mouse") || this.CompareTag("Dino"))) {
+        var size = collision.gameObject.GetComponent<Size>();
+        if (collision != null && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed() && (this.CompareTag("Mouse") || this.CompareTag("Dino")) && (size.size - _size.size) == 1 ) {
             var source = this.CompareTag("Mouse") ? this.gameObject : this.gameObject.transform.GetChild(3).gameObject;
             var hasParent = this.CompareTag("Dino");
             PlayerAcoplation(source, collision.gameObject, hasParent);
