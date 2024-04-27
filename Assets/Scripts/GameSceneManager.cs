@@ -47,9 +47,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
                 // Game is paused, nothing moves
                 break;
 
-            case GameState.Restart:
-                StartTransition();
-                break;
+            
 
         }
     }
@@ -73,6 +71,6 @@ public class GameSceneManager : Singleton<GameSceneManager>
 
     public void RestartGame()
     {
-        GameState = GameState.Restart;
+        SceneManager.LoadScene("GameplayScene");
     }
 }

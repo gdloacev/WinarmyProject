@@ -28,22 +28,20 @@ public class UICredits : MonoBehaviour
 
     void Start()
     {
-        items.Add(new Item { name = "Objeto1", description = "Un artefacto antiguo de origen desconocido." });
-        items.Add(new Item { name = "Objeto2", description = "Una herramienta útil para reparaciones caseras." });
-        items.Add(new Item { name = "Objeto3", description = "Un libro de hechizos con páginas desgastadas." });
-        items.Add(new Item { name = "Objeto4", description = "Una llave maestra que abre cualquier cerradura." });
-        items.Add(new Item { name = "Objeto5", description = "Una piedra preciosa que brilla intensamente bajo la luna." });
-        items.Add(new Item { name = "Objeto6", description = "Un reloj de bolsillo antiguo, aún en funcionamiento." });
-        items.Add(new Item { name = "Objeto7", description = "Un mapa del tesoro marcado con una X en una ubicación desconocida." });
-        items.Add(new Item { name = "Objeto8", description = "Una brújula que siempre señala hacia el norte verdadero." });
-        items.Add(new Item { name = "Objeto9", description = "Una linterna mágica con un genio en su interior." });
-        items.Add(new Item { name = "Objeto10", description = "Una capa de invisibilidad que oculta a quien la usa." });
-        items.Add(new Item { name = "Objeto11", description = "Un diario con los secretos de una civilización perdida." });
-        items.Add(new Item { name = "Objeto12", description = "Una espada legendaria conocida por su filo inquebrantable." });
-        items.Add(new Item { name = "Objeto13", description = "Un escudo indestructible que puede absorber cualquier impacto." });
-        items.Add(new Item { name = "Objeto14", description = "Botas de siete leguas que permiten al usuario viajar grandes distancias en un solo paso." });
-        items.Add(new Item { name = "Objeto15", description = "Un anillo que concede deseos al portador, con gran precaución." });
-        items.Add(new Item { name = "Objeto16", description = "Una pluma que escribe por sí sola cuando se le dicta." });
+        items.Add(new Item { name = "ART", description = "" });
+        items.Add(new Item { name = "3D Modeling", description = "Ana Belén Rodríguez Candanoza \n Porfirio Juan Ignacio Partida Ibarra \n Jesus Eduardo Ramirez Guevara \n Martin Williams Lara" });
+        items.Add(new Item { name = "Rigging", description = "Roberto de Jesús Barraza Mendoza \n Porfirio Juan Ignacio Partida Ibarra" });
+        items.Add(new Item { name = "Animations", description = "Roberto de Jesús Barraza Mendoza \n Porfirio Juan Ignacio Partida Ibarra" });
+        items.Add(new Item { name = "Shaders", description = "Porfirio Juan Ignacio Partida Ibarra" });
+        items.Add(new Item { name = "UI", description = "Jose Alfredo Chi Zum \n Daniela Castillo Bermúdez \n Arturo Prieto Jiménez" });
+        items.Add(new Item { name = "MUSIC & SFX", description = "" });
+        items.Add(new Item { name = "Music", description = "Arturo Prieto Jiménez" });
+        items.Add(new Item { name = "SFX", description = "Arturo Prieto Jiménez" });
+        items.Add(new Item { name = "DEVELOPMENT", description = "" });
+        items.Add(new Item { name = "Level Design", description = "Miguel Eduardo Cruz Carrillo \n Jesus Eduardo Ramirez Guevara \n Martin Williams Lara" });
+        items.Add(new Item { name = "Mechanics", description = "Oscar Tomas Aceves Davalos \n Porfirio Juan Ignacio Partida Ibarra" });
+        items.Add(new Item { name = "UI", description = "Jose Alfredo Chi Zum \n Daniela Castillo Bermúdez \n Arturo Prieto Jiménez" });
+        items.Add(new Item { name = "Transitions", description = "Porfirio Juan Ignacio Partida Ibarra" });
 
         string credits = "";
         foreach (var item in items)
