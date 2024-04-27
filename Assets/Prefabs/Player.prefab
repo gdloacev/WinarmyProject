@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 552195515406192079}
   - component: {fileID: 6886053850867692726}
   - component: {fileID: 3441596908921353897}
-  - component: {fileID: 2022921379755054356}
+  - component: {fileID: 1908121175107058572}
   - component: {fileID: 5543598930648400195}
   - component: {fileID: 4947911978168784642}
   - component: {fileID: 8926014395284732795}
@@ -84,9 +84,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.49, y: 0.5, z: 1.09}
-  m_Center: {x: 0, y: 0.24, z: 0}
---- !u!95 &2022921379755054356
+  m_Size: {x: 0.28595567, y: 0.5, z: 0.6818949}
+  m_Center: {x: -0.011513352, y: 0.24000001, z: 0.20405251}
+--- !u!95 &1908121175107058572
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   _checkDistance: 0.05
   _rayOffset: {x: 0, y: 0, z: 0}
   _allowMovement: 1
-  animator: {fileID: 2022921379755054356}
+  animator: {fileID: 1908121175107058572}
 --- !u!114 &4947911978168784642
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,11 +1,14 @@
 using DefaultNamespace;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public class PlayersAcoplation : MonoBehaviour
 {
+    [SerializeField] private float _offset = 5f;
+
     private Transform _acoplationPoint = null;
     private PlayerMovement _playerMovement;
     private Size _size;
