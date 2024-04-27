@@ -1,9 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class GameSceneManager : Singleton<GameSceneManager>
 {
     [NonSerialized]
     public GameState GameState;
+
+    private bool activateStart = false;
 
     public GameObject lavaHazard;
     // Start is called before the first frame update
@@ -18,7 +22,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
         switch (GameState)
         {
             case GameState.Intro:
-                if (Input.GetKeyDown(KeyCode.Space)) // Assuming space starts the game
+                if (activateStart) // Assuming space starts the game
                 {
                     StartTransition();
                 }
@@ -52,5 +56,10 @@ public class GameSceneManager : Singleton<GameSceneManager>
     {
         GameState = GameState.Transition;
         CameraManager.Instance.TransitionToMain();
+    }
+
+    public void StartGame()
+    {
+        activateStart = true;
     }
 }
