@@ -31,6 +31,11 @@ public class GameSceneManager : Singleton<GameSceneManager>
                     lavaHazard.SetActive(true);
                     GameState = GameState.Playing;
                 }
+                else
+                {
+                    Debug.Log("");
+                }
+
                 break;
 
             case GameState.Playing:

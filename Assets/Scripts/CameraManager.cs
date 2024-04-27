@@ -7,7 +7,7 @@ public class CameraManager : Singleton<CameraManager>
     public CinemachineBrain brain;
     public CinemachineVirtualCamera introCamera;
     public CinemachineVirtualCamera mainCamera;
-    private bool _transitionDone;
+    // private bool _transitionDone;
     public float delay;
 
     private void Start()
@@ -23,15 +23,17 @@ public class CameraManager : Singleton<CameraManager>
 
     private IEnumerator TransitionDelayed()
     {
-        yield return new WaitForSeconds(delay);
         mainCamera.Priority = 10;
         introCamera.Priority = 0;
-        _transitionDone = true;
+        yield return null;
+        // yield return new WaitForSeconds(delay);
+        // _transitionDone = true;
     }
 
 
     public bool IsTransitionDone()
     {
-        return _transitionDone;
+        // return _transitionDone;
+        return brain.ActiveVirtualCamera == mainCamera && !brain.IsBlending;
     }
 }
