@@ -17,16 +17,26 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        if (GameSceneManager.Instance.GameState != GameState.Playing)
+        {
+            return;
+        }
+
         if (_allowMovement)
         {
             var horizontal = Input.GetAxis("Horizontal");
             var vertical = Input.GetAxis("Vertical");
-            if (horizontal > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.right;
-            if (horizontal < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.left;
-            if (vertical > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.forward;
-            if (vertical < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.back;
+            Move(horizontal, vertical);
             if (Input.GetButtonDown("Fire1") && !IsGrounded()) transform.position += _jumpSpeed * Time.deltaTime * Vector3.up;
         }
+    }
+
+    public void Move(float horizontal, float vertical)
+    {
+        if (horizontal > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.right;
+        if (horizontal < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.left;
+        if (vertical > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.forward;
+        if (vertical < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.back;
     }
 
     private bool IsGrounded()

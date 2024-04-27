@@ -1,11 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class MeshDestroy : MonoBehaviour
 {
-
-
     private bool edgeSet = false;
     private Vector3 edgeVertex = Vector3.zero;
     private Vector2 edgeUV = Vector2.zero;
@@ -14,6 +12,7 @@ public class MeshDestroy : MonoBehaviour
     public int CutCascades = 1;
     public float ExplodeForce = 0;
     private Collider thiscollider;
+    public float sizeThreshold;
 
     // Start is called before the first frame update
     private void Start()
@@ -24,7 +23,8 @@ public class MeshDestroy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        var size = other.GetComponent<Size>();
+        if (size.size > sizeThreshold)
         {
             DestroyMesh();
             thiscollider.enabled = false;

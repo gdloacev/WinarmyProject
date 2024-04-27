@@ -172,3 +172,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameplayUI: {fileID: 0}
   introUI: {fileID: 0}
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
