@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _checkDistance = 1.0f;
     [SerializeField] private Vector3 _rayOffset = Vector3.down;
     [SerializeField] private bool _allowMovement = true;
+    public Animator animator;
 
     private Rigidbody _rb = null;
     private int _groundLayerMask = 0;  
@@ -32,7 +33,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Mathf.Abs(horizontal) < 0.001f && Mathf.Abs(vertical) < 0.001f)
         {
+            animator.SetFloat("Speed", 0f);
             return;
+        }
+        else
+        {
+            animator.SetFloat("Speed", 1f);
         }
 
         // Creating a Vector3 based on input and speed
