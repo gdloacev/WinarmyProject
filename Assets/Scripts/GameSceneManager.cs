@@ -50,7 +50,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
 
     private void StartTransition()
     {
-        CameraManager.Instance.TransitionToMain();
         GameState = GameState.Transition;
+        CameraManager.Instance.TransitionToMain();
     }
 }

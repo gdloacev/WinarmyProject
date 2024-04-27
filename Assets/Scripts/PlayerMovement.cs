@@ -33,10 +33,17 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(float horizontal, float vertical)
     {
-        if (horizontal > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.right;
-        if (horizontal < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.left;
-        if (vertical > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.forward;
-        if (vertical < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.back;
+        // Creating a Vector3 based on input and speed
+        Vector3 movement = new Vector3(horizontal, 0.0f, vertical) * (_speed * Time.deltaTime);
+
+        // Apply movement to the Rigidbody
+        _rb.velocity = movement;
+        
+        //
+        // if (horizontal > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.right;
+        // if (horizontal < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.left;
+        // if (vertical > 0.0001f) transform.position += _speed * Time.deltaTime * Vector3.forward;
+        // if (vertical < -0.0001f) transform.position += _speed * Time.deltaTime * Vector3.back;
     }
 
     private bool IsGrounded()

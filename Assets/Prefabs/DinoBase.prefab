@@ -86,7 +86,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 3.2938876, z: 4.2239337}
   m_Center: {x: 0, y: 0.74305606, z: -0.50385165}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _jumpSpeed: 50
+  _jumpSpeed: 0
   _checkDistance: 1
   _rayOffset: {x: 0, y: -1, z: 0}
   _allowMovement: 0
