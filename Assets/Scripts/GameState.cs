@@ -4,5 +4,6 @@
         Transition, 
         Playing,
         Paused,
+        Restart,
         GameOver
 }

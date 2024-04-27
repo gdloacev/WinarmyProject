@@ -22,7 +22,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
         switch (GameState)
         {
             case GameState.Intro:
-                if (activateStart) // Assuming space starts the game
+                if (activateStart)
                 {
                     StartTransition();
                 }
@@ -44,6 +44,11 @@ public class GameSceneManager : Singleton<GameSceneManager>
             case GameState.Paused:
                 // Game is paused, nothing moves
                 break;
+
+            case GameState.Restart:
+                StartTransition();
+                break;
+
         }
     }
 
@@ -61,5 +66,10 @@ public class GameSceneManager : Singleton<GameSceneManager>
     public void StartGame()
     {
         activateStart = true;
+    }
+
+    public void RestartGame()
+    {
+        GameState = GameState.Restart;
     }
 }
