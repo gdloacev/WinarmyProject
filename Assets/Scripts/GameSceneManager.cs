@@ -1,16 +1,21 @@
+using System;
 using UnityEngine;
 public class GameSceneManager : Singleton<GameSceneManager>
 {
-    public GameState gameState;
+    [NonSerialized]
+    public GameState GameState;
+
+    public GameObject lavaHazard;
     // Start is called before the first frame update
     void Start()
     {
-        gameState = GameState.Intro;
+        GameState = GameState.Intro;
+        lavaHazard.SetActive(false);
     }
 
     void Update()
     {
-        switch (gameState)
+        switch (GameState)
         {
             case GameState.Intro:
                 if (Input.GetKeyDown(KeyCode.Space)) // Assuming space starts the game
@@ -23,7 +28,8 @@ public class GameSceneManager : Singleton<GameSceneManager>
                 // Move camera to gameplay position
                 if (IsCameraTransitionDone())
                 {
-                    gameState = GameState.Playing;
+                    lavaHazard.SetActive(true);
+                    GameState = GameState.Playing;
                 }
                 break;
 
@@ -37,7 +43,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
         }
     }
 
-    private static bool IsCameraTransitionDone()
+    private bool IsCameraTransitionDone()
     {
         return CameraManager.Instance.IsTransitionDone();
     }
@@ -45,6 +51,6 @@ public class GameSceneManager : Singleton<GameSceneManager>
     private void StartTransition()
     {
         CameraManager.Instance.TransitionToMain();
-        gameState = GameState.Transition;
+        GameState = GameState.Transition;
     }
 }
