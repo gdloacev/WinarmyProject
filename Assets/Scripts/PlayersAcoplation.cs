@@ -15,14 +15,14 @@ public class PlayersAcoplation : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision != null && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed() && (this.CompareTag("Mouse") || this.CompareTag("Dino"))) {
-            var source = this.CompareTag("Mouse") ? this.gameObject : this.gameObject.transform.GetChild(2).gameObject;
+            var source = this.CompareTag("Mouse") ? this.gameObject : this.gameObject.transform.GetChild(3).gameObject;
             var hasParent = this.CompareTag("Dino");
             PlayerAcoplation(source, collision.gameObject, hasParent);
         }
     }
 
     private void PlayerAcoplation(GameObject source, GameObject target, bool hasParent) {
-        _acoplationPoint = target.transform.GetChild(1);
+        _acoplationPoint = target.transform.GetChild(2);
         var parent = (hasParent) ? source.transform.parent : null;
         if (parent != null)
         {
