@@ -12,7 +12,7 @@ public class Win : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         // On Win
-        if (other.gameObject.CompareTag("Mouse"))
+        if (other.gameObject.CompareTag("Dino"))
         {
             CameraManager.Instance.WinCamera();
             Debug.Log("You've Won!");
