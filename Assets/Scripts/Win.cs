@@ -1,8 +1,6 @@
 using DefaultNamespace;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour
 {
@@ -12,8 +10,10 @@ public class Win : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.name == "Pista") return;
+
         // On Win
-        if (other.gameObject.CompareTag("Dino") && other.gameObject.GetComponent<Size>().size == 3)
+        if (this.CompareTag("Dino") && this.GetComponent<Size>().size == 4)
         {
             CameraManager.Instance.WinCamera();
             Debug.Log("You've Won!");
