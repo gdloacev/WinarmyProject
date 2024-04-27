@@ -8,7 +8,7 @@ public class Win : MonoBehaviour
     [SerializeField] private GameObject lavaHazzard;
     [SerializeField] private GameObject canvasWin;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         // On Win
         if (other.gameObject.CompareTag("Mouse"))

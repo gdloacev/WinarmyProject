@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class PlayersAcoplation : MonoBehaviour
 {
-    [SerializeField] private float _offset = 5f;
-
     private Transform _acoplationPoint = null;
     private PlayerMovement _playerMovement;
     private Size _size;
@@ -23,18 +21,19 @@ public class PlayersAcoplation : MonoBehaviour
     {
         var size = collision.gameObject.GetComponent<Size>();
         if (collision != null && collision.gameObject.CompareTag("Dino") && _playerMovement.IsMovementAllowed() && (this.CompareTag("Mouse") || this.CompareTag("Dino")) && (size.size - _size.size) == 1 ) {
-            var source = this.CompareTag("Mouse") ? this.gameObject : this.gameObject.transform.GetChild(3).gameObject;
+            var source = this.CompareTag("Mouse") ? this.gameObject : this.gameObject.transform.GetChild(2).gameObject;
             var hasParent = this.CompareTag("Dino");
             PlayerAcoplation(source, collision.gameObject, hasParent);
         }
     }
 
     private void PlayerAcoplation(GameObject source, GameObject target, bool hasParent) {
-        _acoplationPoint = target.transform.GetChild(2);
+        _acoplationPoint = target.transform.GetChild(1);
         var parent = (hasParent) ? source.transform.parent : null;
         if (parent != null)
         {
             parent.GetComponent<PlayerMovement>().SetAllowMovement(false);
+            parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
             parent.tag = "Untagged";
         }
         source.transform.position = _acoplationPoint.position;

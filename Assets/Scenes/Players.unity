@@ -455,12 +455,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a6b7fbb203521f49bd0ed35ef0d78e3, type: 3}
---- !u!95 &792383435 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8306872381471818088, guid: 8a6b7fbb203521f49bd0ed35ef0d78e3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1339105940}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1033423105
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,16 +623,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DinoBase
-      objectReference: {fileID: 0}
-    - target: {fileID: 6486693538475282792, guid: 8a6b7fbb203521f49bd0ed35ef0d78e3,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 792383435}
-    - target: {fileID: 8024364955831656145, guid: 8a6b7fbb203521f49bd0ed35ef0d78e3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
