@@ -4,6 +4,8 @@ public class UIManager : Singleton<UIManager>
 {
     public GameObject gameplayUI;
     public GameObject introUI;
+    public GameObject winPanel;
+    public GameObject losePanel;
         
     void Update()
     {
