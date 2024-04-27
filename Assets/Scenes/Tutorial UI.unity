@@ -414,6 +414,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 2380214239920554254, guid: 1ec7505e037e9be4fb442b69a1748e42,
+        type: 3}
+      propertyPath: m_text
+      value: "\rYou move with WASD or the directional arrows, your objective is flee
+        and use other dinosaurs to reach the end and save yourself."
+      objectReference: {fileID: 0}
     - target: {fileID: 7465620684834766444, guid: 1ec7505e037e9be4fb442b69a1748e42,
         type: 3}
       propertyPath: m_Pivot.x
@@ -513,6 +519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819339816238670549, guid: 1ec7505e037e9be4fb442b69a1748e42,
+        type: 3}
+      propertyPath: m_text
+      value: Return
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
