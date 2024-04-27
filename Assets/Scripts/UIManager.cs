@@ -30,6 +30,12 @@ public class UIManager : Singleton<UIManager>
                 gameplayUI.SetActive(false);
                 introUI.SetActive(false);
                 break;
+
+            case GameState.Restart:
+                gameplayUI.SetActive(true);
+                losePanel.SetActive(false);
+                winPanel.SetActive(false);
+                break;
         }
     }
 }

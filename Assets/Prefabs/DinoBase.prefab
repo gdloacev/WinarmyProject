@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb3cb0ffafd8bc48a85c6b7292f5738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offset: 5
 --- !u!114 &6486693538475282792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27aeed1f87dc1b49a8f11f5920de298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5000
+  _speed: 3000
   _jumpSpeed: 0
   _checkDistance: 1
   _rayOffset: {x: 0, y: 0, z: 0}

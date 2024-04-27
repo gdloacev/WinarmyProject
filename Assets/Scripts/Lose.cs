@@ -24,7 +24,7 @@ public class Lose : MonoBehaviour
 
     IEnumerator LoadCorutine()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(0.5f);
         canvasLose.SetActive(true);
     }
 }

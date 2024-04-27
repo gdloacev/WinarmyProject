@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     private Rigidbody _rb = null;
-    private int _groundLayerMask = 0;  
+    private int _groundLayerMask = 0;
+    private float horizontal = 0f;
+    private float vertical = 0f;
 
     private void Awake() { 
         _rb = GetComponent<Rigidbody>();
@@ -19,15 +21,18 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         if (GameSceneManager.Instance.GameState != GameState.Playing) return;
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+    }
 
+    private void FixedUpdate()
+    {
         if (_allowMovement)
         {
-            var horizontal = Input.GetAxis("Horizontal");
-            var vertical = Input.GetAxis("Vertical");
             Move(horizontal, vertical);
             if (Input.GetButtonDown("Fire1") && IsGrounded())
             {
-                animator.SetTrigger("Jump");
+                transform.position += _jumpSpeed * Time.fixedDeltaTime * Vector3.up;
             }
         }
         else
