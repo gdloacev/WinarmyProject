@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5813248170878986498}
   - component: {fileID: 3038889476126496567}
   - component: {fileID: 1033604556381308782}
+  - component: {fileID: 6743513526609053991}
   m_Layer: 6
   m_Name: LavaHazard
   m_TagString: Untagged
@@ -69,6 +70,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 100.66548, y: 41.833435, z: 26.127996}
   m_Center: {x: 0.2231369, y: 10.016426, z: -27.972271}
+--- !u!114 &6743513526609053991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047564140060840082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b1ad6ca1058eb4aba93e077281c507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5114352816197550998
 PrefabInstance:
   m_ObjectHideFlags: 0
