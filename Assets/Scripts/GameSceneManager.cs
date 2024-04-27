@@ -4,13 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class GameSceneManager : Singleton<GameSceneManager>
 {
+    [SerializeField] private SoundManager _soundManager = null;
+
     [NonSerialized]
     public GameState GameState;
 
     private bool activateStart = false;
 
     public GameObject lavaHazard;
-    // Start is called before the first frame update
+
     void Start()
     {
         GameState = GameState.Intro;
@@ -65,6 +67,7 @@ public class GameSceneManager : Singleton<GameSceneManager>
 
     public void StartGame()
     {
+        _soundManager.PlayMusic(0, true);
         activateStart = true;
     }
 
