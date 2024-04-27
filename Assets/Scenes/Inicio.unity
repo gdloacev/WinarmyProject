@@ -463,10 +463,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.49803922, g: 0.7764706, b: 0.26666668, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
-    m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
+    m_PressedColor: {r: 0.19607843, g: 0.17254902, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.22352941, g: 0.2, b: 0.14901961, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 981db66903b10c342ac3f4c6da1ed261, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c575b41c2b05cbd4f86da8963d9dfe64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -963,10 +963,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.49692547, g: 0.7735849, b: 0.26637593, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.05882353, g: 0.23921569, b: 0.05882353, a: 1}
-    m_SelectedColor: {r: 0.13725491, g: 0.56078434, b: 0.13725491, a: 1}
+    m_PressedColor: {r: 0.19607843, g: 0.17254902, b: 0.12941177, a: 1}
+    m_SelectedColor: {r: 0.22352941, g: 0.2, b: 0.14901961, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 981db66903b10c342ac3f4c6da1ed261, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c575b41c2b05cbd4f86da8963d9dfe64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
